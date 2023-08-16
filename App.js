@@ -53,8 +53,12 @@ export const AppNavigator = () => {
 };
 
 export default function App() {
+  // isAuthenticated = is...
+
   return (
     <NavigationContainer>
+      {/* {isAuthenticated ? AuthNavigator : DrawerNavigator } */}
+
       <AppNavigator />
     </NavigationContainer>
   );
