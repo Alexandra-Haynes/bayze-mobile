@@ -6,7 +6,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import AuthNavigator from "./navigations/AuthNavigator";
 
-
 const Tab = createBottomTabNavigator();
 
 const FeedScreen = () => {
@@ -43,7 +42,7 @@ const AccountScreen = () => {
 
 export const AppNavigator = () => {
   return (
-    <AuthNavigator/>
+    <AuthNavigator />
     // <Tab.Navigator>
     //   <Tab.Screen name="Feed" component={FeedScreen} />
     //   <Tab.Screen name="Apps" component={AppsScreen} />
