@@ -2,7 +2,8 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Login, ForgotPassword, Register } from "../screens";
 import { COLORS, ROUTES } from "../constants";
-// import DrawerNavigator from "./DrawerNavigator";
+import BottomTabNavigator from '../navigations/BottomTabNavigator'
+import DrawerNavigator from "./DrawerNavigator";
 
 const Stack = createStackNavigator();
 
@@ -16,8 +17,8 @@ function AuthNavigator() {
         component={ForgotPassword}
         options={({ route }) => ({
           headerTintColor: COLORS.white,
-          // headerBackTitle: 'Back',
-          headerBackTitleVisible: false,
+          headerBackTitle: 'Back',
+          headerBackTitleVisible: true,
           headerStyle: {
             backgroundColor: COLORS.primary,
           },
@@ -30,11 +31,11 @@ function AuthNavigator() {
         options={{ headerShown: false }}
       />
       <Stack.Screen name={ROUTES.REGISTER} component={Register} />
-      {/* <Stack.Screen
+      <Stack.Screen
         name={ROUTES.HOME}
         component={DrawerNavigator}
         options={{ headerShown: false }}
-      /> */}
+      />
     </Stack.Navigator>
   );
 }
