@@ -1,5 +1,7 @@
+import assets from "./assets";
 import ROUTES from "./routes";
 import IMGS from "./imgs";
-import COLORS from "./colors";
+import { COLORS, SHADOWS, SIZES, FONTS } from "./theme";
+import { FeedData } from "./dummy";
 
-export { ROUTES, IMGS, COLORS };
+export { assets, ROUTES, IMGS, COLORS, SHADOWS, SIZES, FONTS, FeedData };

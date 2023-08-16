@@ -72,14 +72,14 @@ const styles = StyleSheet.create({
   activeBtn: {
     flex: 1,
     position: "absolute",
-    top: -22,
+    top: -23,
     width: 50,
     height: 50,
     borderRadius: 50 / 2,
     backgroundColor: COLORS.white,
     alignItems: "center",
     justifyContent: "center",
-    paddingTop: 5,
+    paddingTop: 2,
   },
   inactiveBtn: {
     flex: 1,

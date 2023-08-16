@@ -8,37 +8,7 @@ import AuthNavigator from "./navigations/AuthNavigator";
 
 const Tab = createBottomTabNavigator();
 
-const FeedScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text>Feed goes here</Text>
-    </View>
-  );
-};
 
-const AppsScreen = () => {
-  return (
-    <View>
-      <Text>my apps</Text>
-    </View>
-  );
-};
-
-const MessagesScreen = () => {
-  return (
-    <View>
-      <Text>your messages</Text>
-    </View>
-  );
-};
-
-const AccountScreen = () => {
-  return (
-    <View>
-      <Text>account</Text>
-    </View>
-  );
-};
 
 export const AppNavigator = () => {
   return (
@@ -56,7 +26,7 @@ export default function App() {
   // isAuthenticated = is...
 
   return (
-    <NavigationContainer>
+    <NavigationContainer >
       {/* {isAuthenticated ? AuthNavigator : DrawerNavigator } */}
 
       <AppNavigator />

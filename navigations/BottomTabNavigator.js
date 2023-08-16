@@ -38,7 +38,7 @@ function BottomTabNavigator() {
               : "notifications-outline";
           }
 
-          return <Icon name={iconName} size={20} color={color} />;
+          return <Icon name={iconName} size={22} color={color} />;
         },
       })}
     >
