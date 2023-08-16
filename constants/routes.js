@@ -7,8 +7,8 @@ export default {
   HOME_TAB: "Home Tab",
   HOME_DRAWER: "Home Drawer",
 
-  WALLET: "Wallet",
-  WALLET_DRAWER: "Wallet Drawer",
+  APPS: "Apps",
+  Apps_DRAWER: "Apps Drawer",
 
   NOTIFICATIONS: "Notifications",
   NOTIFICATIONS_DRAWER: "Notifications Drawer",
