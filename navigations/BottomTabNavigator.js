@@ -38,7 +38,7 @@ function BottomTabNavigator() {
               : "notifications-outline";
           }
 
-          return <Icon name={iconName} size={22} color={color} />;
+          return <Icon name={iconName} size={20} color={color} />;
         },
       })}
     >
@@ -103,6 +103,6 @@ const styles = StyleSheet.create({
     bottom: 10,
     right: 10,
     left: 10,
-    height: 80,
+    height: 58,
   },
 });

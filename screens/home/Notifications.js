@@ -12,7 +12,7 @@ const Notifications = () => {
         backgroundColor: COLORS.bgColor,
       }}
     >
-      <Text>Notification!</Text>
+      <Text>Notifications go here</Text>
     </View>
   );
 };
