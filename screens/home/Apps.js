@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View } from "react-native";
 import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 import { COLORS } from "../../constants";
 
-const Home = () => {
+const Apps = () => {
   return (
     <View
       style={{
@@ -12,11 +12,11 @@ const Home = () => {
         backgroundColor: COLORS.bgColor,
       }}
     >
-      <Text>Home!</Text>
+      <Text>Apps goes here</Text>
     </View>
   );
 };
 
-export default Home;
+export default Apps;
 
 const styles = StyleSheet.create({});
