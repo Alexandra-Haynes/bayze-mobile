@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import { Text, View, SafeAreaView, FlatList } from "react-native";
 
 import { COLORS, FeedData } from "../../constants";
-import { HomeHeader, FocusedStatusBar, PostCard } from "../../components";
+import {
+  HomeHeader,
+  FocusedStatusBar,
+  PostCard,
+  UsersList,
+} from "../../components";
+import Feed from "../../components/Feed";
+import { ScrollView } from "react-native-gesture-handler";
 
 const Home = () => {
   const [feedData, setFeedData] = useState(FeedData);
@@ -23,18 +30,11 @@ const Home = () => {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <FocusedStatusBar background={COLORS.primary} />
+      <ScrollView>
+        <FocusedStatusBar background={COLORS.primary} />
 
-      <View style={{ flex: 1 }}>
-        <View style={{ zIndex: 0 }}>
-          <FlatList
-            keyExtractor={(item) => item.id}
-            data={feedData}
-            showsVerticalScrollIndicator={false}
-            ListHeaderComponent={<HomeHeader onSearch={handleSearch} />}
-            renderItem={({ item }) => <PostCard data={item} />}
-          />
-        </View>
+        <HomeHeader />
+        <Feed />
 
         {/* bg color */}
         <View
@@ -48,9 +48,9 @@ const Home = () => {
           }}
         >
           <View style={{ height: 300, backgroundColor: COLORS.black }} />
-          <View style={{ flex: 1, backgroundColor: COLORS.gray }} />
+          <View style={{ flex: 1, backgroundColor: COLORS.grayDark }} />
         </View>
-      </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };

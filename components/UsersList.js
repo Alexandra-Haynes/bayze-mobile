@@ -69,27 +69,26 @@ const UserListItem = ({ user }) => (
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop:60,
-    paddingBottom:120,
+    paddingTop:10,
   },
   userContainer: {
     flexDirection: 'row',
-    padding: 10,
-    backgroundColor:'#fff',
-    height:100,
+    padding: 8,
+    backgroundColor:COLORS.white,
+    height:90,
   },
   userItem: {
     marginRight: 10,
     alignItems: 'center',
 
-    shadowColor: '#000',
+    shadowColor: COLORS.black,
     shadowOpacity: 0.2,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 4,
   },
   statusUserName:{
     marginTop:5,
-    fontSize:12,
+    fontSize:10,
     color:COLORS.gray,
     width:60,
     textAlign:'center'

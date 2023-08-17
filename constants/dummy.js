@@ -5,7 +5,7 @@ const FeedData = [
   {
     id: "post-01",
     userId: "001",
-    username: "Geo23",
+    username: "Bayze Official",
     avatar: assets.bayze,
     date: "12:00",
     title: "News from together.science ",

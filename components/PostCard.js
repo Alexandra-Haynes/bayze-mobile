@@ -6,6 +6,7 @@ import { COLORS, SIZES, SHADOWS, assets } from "../constants";
 import { CircleButton, RectButton } from "./Button";
 import { SubInfo, PostTitle } from "./SubInfo";
 
+
 const PostCard = ({ data }) => {
   const navigation = useNavigation();
   const [heartPressed, setHeartPressed] = useState(false);
