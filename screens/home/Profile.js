@@ -38,24 +38,36 @@ const Profile = () => {
     },
   ];
 
-  
+  let postCount=20
+  let followingCount=22
+  let followersCount=234
 
   return (
     <ScrollView style={styles.container}>
       <View style={styles.headerContainer}>
-        <Image
-          style={styles.coverPhoto}
-          source={assets.cover}
-        />
+        <Image style={styles.coverPhoto} source={assets.cover} />
         <View style={styles.profileContainer}>
-          <Image
-            style={styles.profilePhoto}
-            source={assets.person01}
-          />
+          <Image style={styles.profilePhoto} source={assets.person01} />
           <Text style={styles.nameText}>Alex</Text>
         </View>
       </View>
 
+      <View style={styles.statsContainer}>
+        <View style={styles.statsBox}>
+          <Text style={styles.statsCount}>{postCount}</Text>
+          <Text style={styles.statsLabel}>Posts</Text>
+        </View>
+        <View style={styles.statsBox}>
+          <Text style={styles.statsCount}>{followingCount}</Text>
+          <Text style={styles.statsLabel}>Following</Text>
+        </View>
+        <View style={styles.statsBox}>
+          <Text style={styles.statsCount}>{followersCount}</Text>
+          <Text style={styles.statsLabel}>Followers</Text>
+        </View>
+      </View>
+
+{/* ___________FRIENDS */}
       <View style={styles.section}>
         <Text style={styles.statCount}>1234</Text>
         <Text style={styles.statLabel}>Friends</Text>
@@ -74,12 +86,8 @@ const Profile = () => {
       </View>
 
       <View style={styles.section}>
-        <Text style={styles.bioText}>
-          Bagdes and other info
-        </Text>
+        <Text style={styles.bioText}>Bagdes and other info</Text>
       </View>
-
-    
     </ScrollView>
   );
 };
@@ -117,6 +125,26 @@ const styles = {
     fontSize: 16,
     textAlign: "center",
     color: "#A9A9A9",
+  },
+  statsContainer: {
+    flexDirection: 'row',
+    marginTop: 10,
+    alignItems:'center',
+    justifyContent:'center',
+    paddingBottom:20,
+  },
+  statsBox: {
+    alignItems: 'center',
+    marginHorizontal: 10,
+  },
+  statsCount: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#000000',
+  },
+  statsLabel: {
+    fontSize: 14,
+    color: '#999999',
   },
   section: {
     flexDirection: "row",

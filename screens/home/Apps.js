@@ -36,8 +36,8 @@ const apps = [
   },
   {
     id: 5,
-    name: "ABC",
-    logo: "https://cdn11.bigcommerce.com/s-do3nxddvbo/images/stencil/100x100/abc_stores_-_100x100_1588640320__05230.original.png",
+    name: "Costco",
+    logo: "https://e7.pngegg.com/pngimages/92/986/png-clipart-costco-gift-card-money-discounts-and-allowances-gift-miscellaneous-blue.png",
   },
 ];
 
