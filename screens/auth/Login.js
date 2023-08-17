@@ -30,7 +30,7 @@ const Login = (props) => {
             <Text style={styles.brandName}>Bayze</Text>
           </View>
 
-          <Text style={styles.loginContinueTxt}>Login in to continue</Text>
+          <Text style={styles.loginContinueTxt}>Welcome back!</Text>
           <TextInput style={styles.input} placeholder="Email" />
           <TextInput style={styles.input} placeholder="Password" />
 
@@ -59,7 +59,7 @@ const Login = (props) => {
                 userId: "X0001",
               })
             }
-            style={styles.forgotPassBtn}
+            // style={styles.forgotPassBtn}
           >
             <Text style={styles.forgotPassText}>Forgot Password?</Text>
           </TouchableOpacity>
@@ -150,6 +150,12 @@ const styles = StyleSheet.create({
   },
   forgotPassText: {
     color: COLORS.primary,
+    textAlign: "center",
+    fontWeight: "bold",
+    marginTop: 15,
+  },
+  forgotPassBtn: {
+    color: COLORS.grayDark,
     textAlign: "center",
     fontWeight: "bold",
     marginTop: 15,
