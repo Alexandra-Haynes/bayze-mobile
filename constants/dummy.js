@@ -1,8 +1,13 @@
 import assets from "./assets";
 
+
 const FeedData = [
   {
     id: "post-01",
+    userId: "001",
+    username: "Geo23",
+    avatar: assets.bayze,
+    date: "12:00",
     title: "News from together.science ",
     subtitle: "Have you seen the latest updates?",
     description:
@@ -11,6 +16,10 @@ const FeedData = [
   },
   {
     id: "post-02",
+    userId: "002",
+    username: "Nike",
+    avatar: assets.nike,
+    date: "12:00",
     title: "Announcement from Nike",
     subtitle: "For all the early adopters",
     description:
@@ -19,6 +28,10 @@ const FeedData = [
   },
   {
     id: "post-03",
+    userId: "003",
+    username: "Amalia G",
+    avatar: assets.person02,
+    date: "12:00",
     title: "Check out Sally's comment",
     subtitle: "I am super excited about this",
     description:
@@ -27,6 +40,10 @@ const FeedData = [
   },
   {
     id: "post-04",
+    userId: "004",
+    username: "La vida loca",
+    avatar: assets.person03,
+    date: "12:00",
     title: "New badge earned!",
     subtitle: "Check out Suzy's activity",
     description:
@@ -35,6 +52,10 @@ const FeedData = [
   },
   {
     id: "post-05",
+    userId: "005",
+    username: "Anthony",
+    avatar: assets.person01,
+    date: "12:00",
     title: "You might be interested in this",
     subtitle: "Motivation is overrated",
     description:
@@ -43,6 +64,10 @@ const FeedData = [
   },
   {
     id: "post-06",
+    userId: "006",
+    username: "AM 1003",
+    avatar: assets.nike,
+    date: "12:00",
     title: "Because you love running",
     subtitle: "New record for the Tigers team at ABC",
     description:
@@ -51,6 +76,10 @@ const FeedData = [
   },
   {
     id: "post-07",
+    userId: "007",
+    username: "Garmin",
+    avatar: assets.garmin,
+    date: "12:00",
     title: "New Garmin Badge",
     subtitle: "Garmin Zombie badge",
     description:

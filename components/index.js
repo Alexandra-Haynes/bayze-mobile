@@ -4,6 +4,7 @@ import PostCard from "./PostCard";
 import { CircleButton, RectButton } from "./Button";
 import { PostDesc } from "./PostDesc";
 import { SubInfo } from "./SubInfo";
+import UsersList from './UsersList'
 
 export {
   HomeHeader,
@@ -13,4 +14,5 @@ export {
   RectButton,
   PostDesc,
   SubInfo,
+  UsersList
 };
