@@ -10,15 +10,15 @@ import {
   DrawerContentScrollView,
   DrawerItemList,
 } from "@react-navigation/drawer";
-import { COLORS, IMGS } from "../constants";
+import { COLORS, assets } from "../constants";
 
 const { width } = Dimensions.get("screen");
 
 const CustomDrawer = (props) => {
   return (
     <DrawerContentScrollView {...props}>
-      <ImageBackground source={IMGS.bgPattern} style={{ height: 140 }}>
-        <Image source={IMGS.user} style={styles.userImg} />
+      <ImageBackground source={assets.cover} style={{ height: 140 }}>
+        <Image source={assets.person01} style={styles.userImg} />
       </ImageBackground>
       <View style={styles.drawerListWrapper}>
         <DrawerItemList {...props} />

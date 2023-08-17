@@ -1,9 +1,11 @@
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { COLORS, ROUTES } from "../constants";
-import { Apps, Notifications } from "../screens";
+import { Apps, Notifications, Profile } from "../screens";
 import BottomTabNavigator from "./BottomTabNavigator";
 import Icon from "react-native-vector-icons/Ionicons";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+
 import CustomDrawer from "../components/CustomDrawer";
 
 const Drawer = createDrawerNavigator();
@@ -50,6 +52,20 @@ function DrawerNavigator() {
           title: "Notifications",
           drawerIcon: ({ focused, color, size }) => (
             <Icon name="notifications" size={18} color={color} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name={ROUTES.PROFILE_DRAWER}
+        component={Profile}
+        options={{
+          title: "Profile",
+          drawerIcon: ({ focused, color, size }) => (
+            <MaterialCommunityIcons
+              name="account-box"
+              size={18}
+              color={color}
+            />
           ),
         }}
       />

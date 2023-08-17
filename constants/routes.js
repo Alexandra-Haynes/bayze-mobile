@@ -7,6 +7,10 @@ export default {
   HOME_TAB: "Home Tab",
   HOME_DRAWER: "Home Drawer",
 
+  HOME: "Profile",
+  HOME_TAB: "Profile Tab",
+  PROFILE_DRAWER: "Profile Drawer",
+
   APPS: "Apps",
   Apps_DRAWER: "Apps Drawer",
 
