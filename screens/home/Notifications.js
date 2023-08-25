@@ -10,7 +10,7 @@ import {
 
 import { assets, COLORS } from "../../constants";
 
-export default Notifications = () => {
+export default function Notifications  (){
   const data = [
     {
       id: 3,

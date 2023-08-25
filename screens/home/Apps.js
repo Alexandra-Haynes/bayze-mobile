@@ -12,6 +12,8 @@ import {
   StyleSheet,
 } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
+import logoSource from "../../assets/icons/logo.png";
+
 
 const apps = [
   {
@@ -41,13 +43,23 @@ const apps = [
   },
 ];
 
-export default AppList = () => {
+export default function Apps  ()  {
   const data = apps;
   const [searchText, setSearchText] = useState("");
   const filteredData = data.filter((item) => item.name.includes(searchText));
 
   return (
-    <ScrollView>
+    <ScrollView style={{ backgroundColor: COLORS.gray }}>
+
+      <View style={styles.row}>
+        <Image
+          source={logoSource}
+          style={[styles.mr7, { width: 45, height: 45 }]}
+        />
+        <Text style={styles.brandName}>Bayze</Text>
+      </View>
+
+
       <View style={styles.searchContainer}>
         <TextInput
           style={styles.searchInput}
@@ -59,7 +71,6 @@ export default AppList = () => {
       <FlatList
         data={filteredData}
         horizontal
-        
         renderItem={({ item }) => (
           <View style={styles.itemContainer}>
             <Image source={{ uri: item.logo }} style={styles.logo} />
@@ -75,7 +86,24 @@ export default AppList = () => {
 };
 
 const styles = StyleSheet.create({
- 
+  brandName: {
+    fontSize: 42,
+    textAlign: "center",
+    fontWeight: "bold",
+    color: COLORS.primary,
+    opacity: 0.9,
+  },
+  row: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+   
+   
+  },
+  mr7: {
+    marginRight: 7,
+  },
+
   itemContainer: {
     alignItems: "center",
     borderRadius: 8,
@@ -85,9 +113,9 @@ const styles = StyleSheet.create({
     width: 120,
   },
   logo: {
-    borderRadius: 50,
-    height: 100,
-    width: 100,
+    borderRadius: 12,
+    height: 70,
+    width: 70,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
@@ -114,9 +142,9 @@ const styles = StyleSheet.create({
     elevation: 1,
   },
   name: {
-    fontSize: 16,
+    fontSize: 14,
     marginTop: 8,
-    color: "white",
+    color: COLORS.gray,
     textAlign: "center",
     fontWeight: "bold",
 

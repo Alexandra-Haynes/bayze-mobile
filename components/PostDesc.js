@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import React, { useState } from "react";
-import { DollarPrice, PlantTitle } from "./SubInfo";
+import { DollarPrice, PostTitle } from "./SubInfo";
 import { COLORS, SIZES, FONTS } from "../constants";
 
 export const DetailsDesc = ({ data }) => {
@@ -17,7 +17,7 @@ export const DetailsDesc = ({ data }) => {
           alignItems: "center",
         }}
       >
-        <PlantTitle
+        <PostTitle
           title={data.name}
           subtitle={data.creator}
           titleSize={SIZES.extraLarge}

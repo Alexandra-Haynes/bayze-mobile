@@ -30,8 +30,8 @@ const Login = (props) => {
           </View>
 
           <Text style={styles.loginContinueTxt}>Welcome aboard!</Text>
-          <TextInput style={styles.input} placeholder="First name" />
-          <TextInput style={styles.input} placeholder="Last name" />
+          {/* <TextInput style={styles.input} placeholder="First name" />
+          <TextInput style={styles.input} placeholder="Last name" /> */}
           <TextInput style={styles.input} placeholder="Email" />
           <TextInput style={styles.input} placeholder="Create password" />
           <TextInput style={styles.input} placeholder="Confirm password" />
