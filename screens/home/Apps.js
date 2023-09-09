@@ -49,7 +49,7 @@ export default function Apps  ()  {
   const filteredData = data.filter((item) => item.name.includes(searchText));
 
   return (
-    <ScrollView style={{ backgroundColor: COLORS.gray }}>
+    <ScrollView style={{ backgroundColor: COLORS.white }}>
 
       <View style={styles.row}>
         <Image

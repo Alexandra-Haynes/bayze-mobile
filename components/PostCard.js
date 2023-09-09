@@ -16,7 +16,7 @@ const PostCard = ({ data }) => {
   return (
     <View
       style={{
-        backgroundColor: COLORS.white,
+        backgroundColor: COLORS.gray,
         borderRadius: SIZES.font,
         marginBottom: SIZES.extraLarge,
         margin: SIZES.base,

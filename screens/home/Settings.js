@@ -9,7 +9,7 @@ const Settings = ({ navigation }) => {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: COLORS.bgColor,
+        backgroundColor: COLORS.white,
       }}
     >
       <Text>Settings</Text>

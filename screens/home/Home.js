@@ -48,7 +48,7 @@ const Home = () => {
           }}
         >
           <View style={{ height: 300, backgroundColor: COLORS.black }} />
-          <View style={{ flex: 1, backgroundColor: COLORS.grayDark }} />
+          <View style={{ flex: 1, backgroundColor: COLORS.white }} />
         </View>
       </ScrollView>
     </SafeAreaView>
